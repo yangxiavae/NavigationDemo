@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:background="#ffffff">
+    <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="500dp"
+            android:text="你好"
+            android:textSize="35px"
+            android:textColor="#333333"
+            android:gravity="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+    />
+    <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="世界"
+            android:textSize="105px"
+            android:textColor="#333333"
+            app:layout_constraintLeft_toRightOf="@id/tv_1"
+
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_1"
+            android:layout_marginLeft="8dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="角度"
+            android:textSize="55px"
+            android:textColor="#333333"
+            app:layout_constraintCircle="@id/tv_2"
+            app:layout_constraintCircleAngle="120"
+            app:layout_constraintCircleRadius="120dp"
+            tools:layout_editor_absoluteX="156dp" tools:layout_editor_absoluteY="56dp"/>
+    <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="再见"
+            android:textSize="35px"
+            android:textColor="#333333"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_1"
+    />
+</androidx.constraintlayout.widget.ConstraintLayout>

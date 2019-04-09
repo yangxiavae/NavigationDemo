@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/main" app:startDestination="@id/mainFragment">
+
+    <fragment
+            android:id="@+id/mainFragment"
+            android:name="cn.innovate.environment.fragment.main.MainFragment"
+            android:label="MainFragment">
+        <action
+                android:id="@+id/action_mainFragment_to_detailFragment"
+                app:destination="@id/detailFragment"
+                app:enterAnim="@anim/activity_left_in"
+                app:exitAnim="@anim/activity_right_out"
+                app:popEnterAnim="@anim/activity_left_in"
+                app:popExitAnim="@anim/activity_right_out"/>
+        <argument
+                android:name="data"
+                app:argType="string"
+                android:defaultValue="明细界面"/>
+    </fragment>
+    <fragment
+            android:id="@+id/alarmFragment"
+            android:name="cn.innovate.environment.fragment.alarm.AlarmFragment"
+            android:label="AlarmFragment"/>
+    <fragment
+            android:id="@+id/detailFragment"
+            android:name="cn.innovate.environment.fragment.main.DetailFragment"
+            android:label="DetailFragment"/>
+</navigation>

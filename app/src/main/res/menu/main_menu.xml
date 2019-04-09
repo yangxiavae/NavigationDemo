@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--Attempt to navigate to the NavDestination associated with the given MenuItem. This MenuItem should have been added via one of the helper methods in this class.-->
+    <!--Importantly, it assumes the menu item id matches a valid action id or destination id to be navigated to.-->
+    <!--By default, the back stack will be popped back to the navigation graph's start destination. -->
+    <!--Menu items that have android:menuCategory="secondary" will not pop the back stack.-->
+    <item
+            android:id="@+id/mainFragment"
+            android:title="首页"
+            android:icon="@drawable/tab_main_unselect"
+    />
+    <item
+            android:id="@+id/alarmFragment"
+            android:title="告警"
+            android:icon="@drawable/tab_alarm_unselect"
+    />
+    <item
+            android:id="@+id/map"
+            android:title="地图"
+            android:icon="@drawable/tab_loction_unselect"
+    />
+    <item
+            android:id="@+id/monitor"
+            android:title="监控"
+            android:icon="@drawable/tab_chart_unselect"
+    />
+
+    <item
+            android:id="@+id/me"
+            android:title="个人"
+            android:icon="@drawable/tab_me_unselect"
+    />
+</menu>
